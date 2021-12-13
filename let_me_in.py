@@ -60,6 +60,7 @@ def checkForError():
     click_pos = pyautogui.locateOnScreen('images/OK_partial.png')
     if click_pos != None:
         pyautogui.click(click_pos.left + 10, click_pos.top + 10)
+        pyautogui.click(click_pos.left + 10, click_pos.top + 10)
         isError = True
     return isError
 
@@ -67,7 +68,6 @@ def checkForWorldEnter():
     #print("Checking if successfully entered world")
     isSuccessful = False
     click_pos = pyautogui.locateOnScreen('images/msq.png')
-    print(click_pos)
     if click_pos != None:
         isSuccessful = True
     return isSuccessful
