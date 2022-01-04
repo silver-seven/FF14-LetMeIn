@@ -89,6 +89,14 @@ def main():
             time.sleep(10)
             restartLogin(pwd, positions)
 
+def keepOn():
+    while True:
+        time.sleep(900)
+        pyautogui.click(1380, 1122)
+        pyautogui.click(1380, 1122)
+        time.sleep(10)
+        pyautogui.press('space')
 
 if __name__ == '__main__':
+    #keepOn()
     main()
